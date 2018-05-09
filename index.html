@@ -1,9 +1,217 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Letiy</title>
+<title>Letiy Home</title>
+<!--mobile apps-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Expedition Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	Smartphone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--//mobile apps-->
+<!--Custom Theme files-->
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<!-- //Custom Theme files -->
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script> 
+<!-- //js -->
+<!--web-fonts-->
+<link href='https://fonts.googleapis.com/css?family=Nova+Script' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<!--//web-fonts-->
+<!-- start-smooth-scrolling-->	
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+		$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+</script>
+<!--//end-smooth-scrolling-->	
 </head>
 <body>
-	<h1> The letiy website.</h1>
+
+	<!--banner-->
+	<div class="banner" id="home">
+		<div class="banner-left">
+			<div class="logo">
+				<h1><a href="index.html">The Letiy</a></h1>
+				<h6>中小企业互联网产品研发一站式服务</h6>
+				<h2>创新改变世界，用我们的创新帮助客户提高竞争力!</h2>
+				<div class="address">
+					<p>近乎360°服务保障，免除后顾之忧</p>
+					<p>多行业跨界认可，彰显品牌形象</p>
+					<p>无须催单，定制品质与效率智能可控</p>
+				</div>
+				<a class="book hvr-outline-out" href="#"> 免费试用 !</a>
+			</div>	
+		</div>
+		<div class="banner-right">
+			<!--banner Slider starts Here-->
+				<script src="js/responsiveslides.min.js"></script>
+				<script>
+					// You can also use "$(window).load(function() {"
+					$(function () {
+					  // Slideshow 3
+					  $("#slider3").responsiveSlides({
+						auto: true,
+						pager: true,
+						nav: false,
+						speed: 500,
+						namespace: "callbacks",
+						before: function () {
+						  $('.events').append("<li>before event fired.</li>");
+						},
+						after: function () {
+						  $('.events').append("<li>after event fired.</li>");
+						}
+					  });
+				
+					});
+				</script>
+				<!--//End-slider-script-->
+				<div  id="top" class="callbacks_container">
+					<ul class="rslides" id="slider3">
+						<li>
+							<div class="banner-image">
+							</div>
+						</li>
+						<li>
+							<div class="banner-image banner-image1">
+							</div>
+						</li>
+						<li>
+							<div class="banner-image banner-image2">
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<script>
+				(function($){
+					// Menu Functions
+					$(document).ready(function(){
+					$('#menuToggle').click(function(e){
+						var $parent = $(this).parent('nav');
+					  $parent.toggleClass("open");
+					  var navState = $parent.hasClass('open') ? "hide" : "show";
+					  $(this).attr("title", navState + " navigation");
+							// Set the timeout to the animation length in the CSS.
+							setTimeout(function(){
+								console.log("timeout set");
+								$('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+							}, 200);
+						e.preventDefault();
+					});
+				  });
+				})(jQuery);
+				</script>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	<!--//banner-->
+	
+	
+	<!--services-->
+	<div class="services">
+		<div class="container">
+			<h3 class="title">我们的服务</h3>
+			<div class="col-md-5 services-info">
+				<h5>专业技术团队，多年软件开发项目经验，多个企业成功案例，全天候技术咨询</h5>
+				<div class="services-grid">
+					<div class="border">
+						<img src="images/img2.jpg" alt=""/>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-7 services-grids">
+				<div class="services-grids-top">
+					<div class="col-md-6 service-box">
+						<figure class="icon">
+							<span class="glyphicon glyphicon-plane"></span>
+						</figure>
+						<h5>解决方案</h5>
+						<p>针对各行业业务特性，打造个性化行业解决方案，为用户提供一站式的产品与服务</p>
+					</div>
+					<div class="col-md-6 service-box">
+						<figure class="icon">
+							<span class="glyphicon glyphicon-picture"></span>
+						</figure>
+						<h5>微信公众平台开发</h5>
+						<p>简单易用，响应式匹配，小程序开发，聚焦7亿微信用户</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="services-grids-top">
+					<div class="col-md-6 service-box">
+						<figure class="icon">
+							<span class="glyphicon glyphicon-heart"></span>
+						</figure>
+						<h5>APP定制开发</h5>
+						<p>提供Android+IOS双系统原生/H5/混合开发服务</p>
+					</div>
+					<div class="col-md-6 service-box wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+						<figure class="icon">
+							<span class="glyphicon glyphicon-home"></span>
+						</figure>
+						<h5>网站设计开发</h5>
+						<p>关于网站建站，您忧虑的都是我们专注和擅长的</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!-- //services -->
+
+	<!--footer-->
+	<div class="footer">
+		<div class="container">
+			<div class="col-md-4 footer-grids">
+				<h3>关于</h3>
+				<p>我们是一个成熟的互联网研发团队，全心致力于企事业单位系统定制开发和电商平台的搭建及技术维护。公司拥有独立的公、私云服务器资源，合作行业涉及电子商务、航空、健康、基因 、餐饮、珠宝、物流、教育、体育咨询、房产、汽车等，具有丰富的系统、产品、平台策划设计经验。</p>
+			</div>
+			<div class="col-md-3 footer-grids">
+				<h3>联系我们</h3>
+				<p>天河北路890号1602<br>
+					<span>QQ: 1778 2690</span>
+					<span>邮箱: <a href="mailto:LetiyGroup@gmail.com">LetiyGroup@gmail.com</a></span>
+				</p>
+				<div class="footer-bottom">
+					<h3>关注我们</h3>
+					<ul>
+						<li><a href="#"><img src="images/f1.png" alt=""> FACEBOOK</a></li>
+						<li><a href="#"><img src="images/f4.png" alt=""> TWITTER</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-5 footer-grids">
+				<h3>订阅</h3>
+				<p>输入您的电子邮件，获取最新资讯，这完全是免费的，同时也可以随时取消订阅，我们不会给您发垃圾邮件。</p>
+				<form>
+					<input type="text" placeholder="输入你的邮箱地址" required="">
+					<input type="submit" value="">
+				</form>
+				<div class="footer-bottom">
+					<h3>典型客户</h3>
+					<a  class="footer-img" href="#"> <img src="images/img7.jpg" alt=""/></a>
+					<a class="footer-img" href="#"> <img src="images/img1.jpg" alt=""/></a>
+					<a class="footer-img" href="#"> <img src="images/img8.jpg" alt=""/></a>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+			<div class="footer-copy">
+				<p>Copyright &copy; 2018.Letiy All rights reserved.</p>
+			</div>
+		</div>
+	</div>
+	<!--//footer-->
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>
